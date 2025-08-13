@@ -334,3 +334,53 @@ body{
         transform: translateX(50%);
     }
 }
+
+#contact {
+    margin-top: 180px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+.formulario{
+    margin-top: 20px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--cor-menu);
+}
+
+.formulario__input{
+    width: 98%;
+    padding: 10px 1%;
+    border: 1px solid var(--cor-texto-principal);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.texto_formulario{
+    font-size: 16px;
+    
+}
+
+#mensagem{
+    height: 100px;
+}
+
+#enviar{
+    margin: 0 auto;
+    width: 20%;
+    border: none;
+    padding: 10px 20px;
+    border: var(--cor-texto-principal) 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
