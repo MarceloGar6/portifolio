@@ -2,6 +2,11 @@ const sections = ['home', 'about', 'skills', 'contact'];
 const menuItem = document.querySelectorAll('.menu-list__item');
 const imagemProgramador = document.querySelector('#programador-img');
 const skillsItem = document.querySelectorAll('.skills__item');
+const slides = document.querySelectorAll('.certificados__carrocel__img');
+const btnAnterior = document.querySelector('#certificados__anterior');
+const btnProximo = document.querySelector('#certificados__proximo');
+
+let slideIndex = 0;
 
 window.addEventListener('scroll', function () {
   const menu = document.querySelector('.menu');
@@ -37,3 +42,39 @@ skillsItem.forEach(item => {
     item.querySelector('.skills__item__texto').style.fontSize = '0'
   });
 });
+
+
+btnProximo.addEventListener('click', proximoSlide);
+btnAnterior.addEventListener('click', slideAnterior);
+
+function mostrarSlide(){
+  slides[slideIndex].classList.add('on');
+}
+
+function proximoSlide(){
+  let slideAnterior = slideIndex;
+  slides[slideAnterior].classList.add('saindo-esquerda');
+  setTimeout(() => {
+    slides[slideAnterior].classList.remove('on', 'saindo-esquerda');
+  }, 500);
+  if (slideIndex < slides.length - 1) {
+    slideIndex++;
+  } else {
+    slideIndex = 0;
+  }
+  mostrarSlide();
+}
+
+function slideAnterior(){
+  let slideAnterior = slideIndex;
+  slides[slideAnterior].classList.add('saindo-direita');
+  setTimeout(() => {
+    slides[slideAnterior].classList.remove('on', 'saindo-direita');
+  }, 500);
+  if (slideIndex > 0) {
+    slideIndex--;
+  } else {
+    slideIndex = slides.length - 1;
+  }
+  mostrarSlide();
+}
