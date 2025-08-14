@@ -397,16 +397,22 @@ body{
 }
 
 .footer{
+    position: relative;
+    left: -10vw;
+    bottom: 0;
+    width: 100vw;
     background-color: var(--cor-menu);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
     text-align: center;
     padding: 20px 0;
-    border-radius: 0 0 50px 50px;
 }
+
 @media (max-width: 1160px) {
     body{
         margin: 0 5vw;
+    }
+
+    .footer{
+        left: -5vw;
     }
 
     #chamado{
@@ -427,11 +433,16 @@ body{
         width: 9vw;
         height: 9vw;
     }
+
 }
 
 @media (max-width: 1000px) {
     body{
         margin: 0 3vw;
+    }
+
+    .footer{
+        left: -3vw;
     }
 
     .menu-list__item a{
@@ -547,4 +558,5 @@ body{
         width: 100%;
         margin: 0;
     }
+
 }
