@@ -3,13 +3,15 @@
     padding: 0;
 }
 
+
 :root{
     --fundo-background: linear-gradient(135deg, #1e90ff, blueviolet);
-    --cor-texto-principal: black;
+    --cor-texto-principal: #000;
     --cor-texto-secundario: #fff;
     --cor-texto-hover: #374a72;
     --cor-menu: rgba(241, 241, 241, 0.7);
-    --fundo-secundario: linear-gradient(135deg, #ffffff, #7e7e7e);
+    --fundo-secundario: linear-gradient(135deg, #fff, #7e7e7e);
+    --box-shadow: 0 4px 16px rgba(0,0,0,0.1), 0 10px 26px gray;
 }
 
 html {
@@ -30,7 +32,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 5%;
+    padding: 20px 5%;
     border-radius: 50px 50px 0 0;
     position: sticky;
     top: 5px;
@@ -189,14 +191,14 @@ body{
 .fotografia{
     width: 30vw;
     border-radius: 30%;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-    box-shadow: gray 0 10px 26px;
+    box-shadow: var(--box-shadow);
 }
 
 .about__icons {
     display: flex;
     gap: 20px;
 }
+
 
 .about__icon {
     width: 60px;
@@ -234,6 +236,7 @@ body{
     gap: 50px;
 }
 
+
 .skills__item {
     list-style-type: none;
     display: flex;
@@ -247,11 +250,13 @@ body{
     border-radius: 20px;
 }
 
+
 .skills__item img{
     width: 6vw;
     height: 6vw;
     border-radius: 10%;
 }
+
 
 .skills__item__texto {
     display: block;
@@ -262,8 +267,9 @@ body{
     transition: all 0.3s ease;
 }
 
+
 .img-fundo-branco {
-    background-color: white;
+    background-color: #fff;
 }
 
 #certificados {
@@ -362,7 +368,7 @@ body{
 }
 
 .formulario__input{
-    width: 100%;
+    width: calc(98% - 1px);
     padding: 10px 1%;
     border: 1px solid var(--cor-texto-principal);
     border-radius: 5px;
@@ -381,6 +387,9 @@ body{
 
 #mensagem{
     height: 100px;
+    padding: 10px 1%;
+    border: 1px solid var(--cor-texto-principal);
+    border-radius: 5px;
 }
 
 #enviar{
@@ -408,120 +417,98 @@ body{
 }
 
 @media (max-width: 1160px) {
-    body{
+    body {
         margin: 0 5vw;
     }
-
-    .footer{
+    .footer {
         left: -5vw;
     }
-
-    #chamado{
+    #chamado {
         font-size: 46px;
     }
-    
     .menu.menu--scrolled {
         margin: 0 3vw;
     }
-
     .skills__item {
         width: 13vw;
         height: 13.5vw;
         gap: 5px;
     }
-
-    .skills__item img{
+    .skills__item img {
         width: 9vw;
         height: 9vw;
     }
-
 }
 
 @media (max-width: 1000px) {
-    body{
+    body {
         margin: 0 3vw;
     }
-
-    .footer{
+    .footer {
         left: -3vw;
     }
-
-    .menu-list__item a{
+    .menu-list__item a {
         font-size: 14px;
     }
-    #chamado{
+    #chamado {
         font-size: 4vw;
     }
-
-    #about{
+    #about {
         margin-bottom: 100px;
     }
-
-    .fotografia{
+    .fotografia {
         margin-bottom: 200px;
     }
-
-    .container__segundo-paragrafo{
+    .container__segundo-paragrafo {
         width: 85vw;
-        padding:  0 3vw;
+        padding: 0 3vw;
         position: relative;
         left: -36vw;
         top: 10px;
     }
-
     .skills__item {
         border-radius: 10px;
         width: 12.5vw;
         height: 13vw;
         gap: 1px;
     }
-
-    .skills__item img{
+    .skills__item img {
         width: 8vw;
         height: 8vw;
     }
-
 }
 
 @media (max-width: 780px) {
-    .menu{
+    .menu {
         border-radius: 40px 40px 0 0;
     }
-
-    .menu-list{
+    .menu-list {
         display: none;
     }
-
-    .menu-hamburguer{
+    .menu-hamburguer {
         display: block;
     }
-
-    #chamado{
+    #chamado {
         font-size: 36px;
     }
-
-    .container{
+    .container {
         flex-direction: column;
         padding: 80px 1vw 0 1vw;
         gap: 30px;
     }
-
-    .container__conteudo{
+    .container__conteudo {
         max-width: 90vw;
         align-items: center;
         text-align: center;
     }
-
-    #programador-img{
+    #programador-img {
         display: none;
     }
-
-    .fotografia{
+    .fotografia {
         width: 60vw;
         margin-bottom: 50px;
     }
-
-    .container__segundo-paragrafo{
+    .container__segundo-paragrafo {
         align-items: center;
         position: static;
         width: 100%;
@@ -529,35 +516,37 @@ body{
         left: 0;
         top: 0;
     }
-
-
     .skills__list {
         flex-wrap: wrap;
         gap: 30px;
     }
-
     .skills__item {
         width: 12vw;
         height: 12.5vw;
     }
-
-    .skills__item img{
+    .skills__item img {
         width: 8vw;
         height: 8vw;
     }
-
     .skills__item__texto {
         font-size: 14px;
     }
-
-    .formulario{
+    .formulario__inteiro {
+        display: flex;
         flex-direction: column;
-        gap: 20px;
-    }
-
-    #enviar{
         width: 100%;
-        margin: 0;
+        align-items: center;
+    }
+    .formulario {
+        width: 100%;
+        flex-direction: column;
+        gap: 3px;
+        
     }
 
+    .formulario__mensagem__container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 }
