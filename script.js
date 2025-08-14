@@ -13,7 +13,7 @@ window.addEventListener('scroll', function () {
   const home = document.querySelector('#home');
   const metadeTela = window.innerHeight / 2;
 
-  if (window.scrollY > 2) {
+  if (window.scrollY > 10) {
     menu.classList.add('menu--scrolled');
     home.classList.add('home--scrolled');
   } else {
