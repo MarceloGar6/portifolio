@@ -538,7 +538,7 @@ body{
         align-items: center;
     }
     .formulario {
-        width: 100%;
+        width: 100vw;
         flex-direction: column;
         gap: 3px;
         
@@ -548,5 +548,27 @@ body{
         display: flex;
         flex-direction: column;
         width: 100%;
+    }
+
+    #enviar {
+        padding: 10px 20px;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    #certificados-em-carrocel{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        justify-content: center;
+        margin-top: 10vh;
+    }
+    .certificados__carrocel {
+        position: relative;
+        width: 80vw;
+        display: flex;
+        scroll-snap-type: x mandatory;
     }
 }
