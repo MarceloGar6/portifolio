@@ -36,7 +36,13 @@ window.addEventListener('scroll', function () {
 
 skillsItem.forEach(item => {
   item.addEventListener('mouseover', () => {
-    item.querySelector('.skills__item__texto').style.fontSize = '20px'
+    if (window.innerWidth > 780) {
+      item.querySelector('.skills__item__texto').style.fontSize = '20px';
+    } else if (window.innerWidth >= 600) {
+      item.querySelector('.skills__item__texto').style.fontSize = '16px'
+    } else if (window.innerWidth < 600) {
+      item.querySelector('.skills__item__texto').style.fontSize = '14px'
+    }
   });
   item.addEventListener('mouseout', () => {
     item.querySelector('.skills__item__texto').style.fontSize = '0'

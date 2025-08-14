@@ -290,8 +290,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
-    height: 100px;
+    width: 800px;
+    height: 400px;
 }
 
 .certificados__botao{
@@ -369,7 +369,7 @@ body{
 
 .formulario__input{
     width: calc(98% - 1px);
-    padding: 10px 1%;
+    padding: 14px 1%;
     border: 1px solid var(--cor-texto-principal);
     border-radius: 5px;
     font-size: 16px;
@@ -476,7 +476,12 @@ body{
         width: 8vw;
         height: 8vw;
     }
-}
+
+    .certificados__carrocel {
+        width: 600px;
+        height: 200px;
+    }
+    }
 
 @media (max-width: 780px) {
     .menu {
@@ -518,18 +523,15 @@ body{
     }
     .skills__list {
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 5px;
     }
     .skills__item {
-        width: 12vw;
-        height: 12.5vw;
+        width: 16.5vw;
+        height: 17vw;
     }
     .skills__item img {
         width: 8vw;
         height: 8vw;
-    }
-    .skills__item__texto {
-        font-size: 14px;
     }
     .formulario__inteiro {
         display: flex;
@@ -552,7 +554,9 @@ body{
 
     #enviar {
         padding: 10px 20px;
-        align-items: center;
+        display: block;
+        margin: 0 auto 20px auto;
+        text-align: center;
         overflow: hidden;
     }
 
@@ -562,8 +566,8 @@ body{
         display: flex;
         flex-direction: row;
         width: 100vw;
+        height: 50vw;
         justify-content: center;
-        margin-top: 10vh;
     }
     .certificados__carrocel {
         position: relative;
