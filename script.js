@@ -98,9 +98,17 @@ const menu = document.querySelector('.menu');
 if (menuHamburguer && menuList) {
   menuHamburguer.addEventListener('click', () => {
     menuList.classList.toggle('menu-list--ativo');
-    menu.style.borderRadius = menuList.classList.contains('menu-list--ativo')
-      ? '0 0 40px 0'
-      : '';
+    if (menuList.classList.contains('menu-list--ativo')) {
+      if (window.scrollY > 10) {
+        menu.style.borderRadius = '0 0 40px 0';
+      } else {
+        menu.style.borderRadius = '';
+      }
+      menu.style.backgroundColor = 'rgb(241, 241, 241)';
+    } else {
+      menu.style.borderRadius = '';
+      menu.style.backgroundColor = '';
+    }
   });
   // Fecha o menu ao clicar em um item
   menuList.querySelectorAll('a').forEach(link => {

@@ -9,7 +9,7 @@
     --cor-texto-principal: #000;
     --cor-texto-secundario: #fff;
     --cor-texto-hover: #374a72;
-    --cor-menu: rgba(241, 241, 241, 0.7);
+    --cor-menu: rgba(241, 241, 241, 0.699);
     --fundo-secundario: linear-gradient(135deg, #fff, #7e7e7e);
     --box-shadow: 0 4px 16px rgba(0,0,0,0.1), 0 10px 26px gray;
 }
@@ -27,8 +27,8 @@ body{
 
 .menu{
     background-color: var(--cor-menu);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +37,7 @@ body{
     position: sticky;
     top: 5px;
     z-index: 1000;
-    transition: border-radius 0.2s ease, margin 0.4s ease;
+    transition: border-radius 0.2s ease, margin 0.4s ease, background-color 0.5s ease;
 }
 
 .menu.menu--scrolled {
@@ -96,7 +96,7 @@ body{
     text-align: center;
     background: var(--fundo-background);
     border-radius: 0 0 50px 50px;
-    transition: border-radius 0.4s ease;
+    transition: border-radius 0.4s ease
 }
 
 #home.home--scrolled {
@@ -513,10 +513,11 @@ body{
         flex-direction: column;
         align-items: flex-start;
         position: fixed;
-        top: 72.4px;
+        top: 71px;
         left: 0;
         width: 30vw;
-        background-color: var(--cor-menu);
+        background-color: rgb(241, 241, 241);
+        backdrop-filter: blur(8px);
         border-radius: 0 0 20px 20px;
         z-index: 2000;
         gap: 0;
