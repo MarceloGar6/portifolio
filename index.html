@@ -33,13 +33,17 @@
         <div class="container__conteudo">
             <h2 class="container__titulo">SOBRE<span class="container__titulo--destaque">MIM</span></h2>
             <p class="container__texto">Olá, sou Marcelo Garces Branco Pereira, nascido e criado em Imperatriz-MA. Recentemente me mudei e agora estou cursando o primeiro período do curso de Bacharel em Sistema de Informação pelo IFMA de São Luís-MA. Tenho uma breve experiência em HTML, CSS, JavaScript e estou aprendendo novas tecnologias como JAVA e GDScript para aprimorar minhas habilidades.
-            <br><br>
-            Minha jornada como Desenvolvedor começou em 2017 com um simples jogo de navegador chamado "Habbo Hotel", onde era possível utilizar de uma programação em blocos para criar jogos e interações. Desde então, minha paixão por programação só cresceu, levando-me a explorar diversas linguagens e tecnologias.
+            <br>
             </p>
-            <div class="about__icons">
-                <a class="about__icon" href="https://www.instagram.com/Marcelo_Garcess"><img class="icon-imagem" src="images/instagram.png" alt="link para o perfil do instagram"></a>
-                <a class="about__icon" href="https://www.linkedin.com/in/marcelo-garces"><img class="icon-imagem" src="images/linkedin.png" alt="link para o perfil do linkedin"></a>
-                <a class="about__icon" href="https://github.com/MarceloGar6"><img class="icon-imagem" src="images/github.png" alt="link para o perfil do github"></a>
+            <div class="container__segundo-paragrafo">
+                <p class="container__texto segundo-paragrafo">
+                Minha jornada como Desenvolvedor começou em 2017 com um simples jogo de navegador chamado "Habbo Hotel", onde era possível utilizar de uma programação em blocos para criar jogos e interações. Desde então, minha paixão por programação só cresceu, levando-me a explorar diversas linguagens e tecnologias.
+                </p>
+                <div class="about__icons">
+                    <a class="about__icon" href="https://www.instagram.com/Marcelo_Garcess"><img class="icon-imagem" src="images/instagram.png" alt="link para o perfil do instagram"></a>
+                    <a class="about__icon" href="https://www.linkedin.com/in/marcelo-garces"><img class="icon-imagem" src="images/linkedin.png" alt="link para o perfil do linkedin"></a>
+                    <a class="about__icon" href="https://github.com/MarceloGar6"><img class="icon-imagem" src="images/github.png" alt="link para o perfil do github"></a>
+                </div>
             </div>
         </div>
     </section>
@@ -102,17 +106,26 @@
 
     <section id="contact" class="container">
         <h2 class="container__titulo container__titulo--destaque">CONTATO</h2>
-        <form class="formulario">
-            <label class="texto_formulario" for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required class="formulario__input">
-            <label class="texto_formulario" for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required class="formulario__input">
-            <label class="texto_formulario" for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        <form class="formulario__inteiro"> 
+            <div class="formulario">
+                <div class="formulario__mensagem__container">
+                    <label class="texto_formulario" for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required class="formulario__input">
+                    <label class="texto_formulario" for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required class="formulario__input">
+                </div>
+                <div class="formulario__mensagem__container">
+                    <label class="texto_formulario" for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+            </div>
             <button id="enviar" type="submit">Enviar</button>
         </form>
-
     </section>
+
+    <footer class="footer">
+        <p class="footer__texto">Desenvolvido por Marcelo Garces &copy; 2024</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 
