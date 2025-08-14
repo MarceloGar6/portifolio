@@ -115,6 +115,7 @@ if (menuHamburguer && menuList) {
     link.addEventListener('click', () => {
       menuList.classList.remove('menu-list--ativo');
       menu.style.borderRadius = '';
+      menu.style.backgroundColor = '';
     });
   });
 }
