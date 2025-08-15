@@ -23,7 +23,7 @@ section{
 }
 
 html {
-    scroll-padding-top: 75px;
+    scroll-padding-top: 20px;
     scroll-behavior: smooth;
 }
 
@@ -31,6 +31,7 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
     margin: 0 10vw;
+    ;
 }
 
 .menu{
@@ -86,7 +87,6 @@ body{
     height: 30px;
     background-image: url('./images/menu-hamburguer.png');
     background-size: cover;
-
 }
 
 .menu-hamburguer:hover{
@@ -98,7 +98,7 @@ body{
     margin-top: 5px;
     padding: 0 1vw;
     color: var(--cor-texto-secundario);
-    height: 80vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,6 +153,23 @@ body{
   to {
     transform: translateY(-30px);
   }
+}
+
+.div-avisos{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+}
+
+#aviso-descer{
+    padding: 20px;
+    animation: pisca 1.5s infinite;
+}
+
+@keyframes pisca {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
 
 .container{
@@ -564,7 +581,7 @@ body{
     }
 
     #home{
-        height: 30vh;
+        height: 60vh;
     }
     #chamado {
         font-size: 36px;
