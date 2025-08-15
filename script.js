@@ -11,7 +11,7 @@ let slideIndex = 0;
 window.addEventListener('scroll', function () {
   const menu = document.querySelector('.menu');
   const home = document.querySelector('#home');
-  const metadeTela = window.innerHeight / 3;
+  const metadeTela = window.innerHeight / 2.5;
 
   if (window.scrollY > 10) {
     menu.classList.add('menu--scrolled');
@@ -30,11 +30,13 @@ window.addEventListener('scroll', function () {
   sections.forEach((id, index) => {
     const section = document.getElementById(id);
     const item = menuItem[index];
+    const sectionEspecifica = document.querySelector(`#${id}`);
     if (section && item) {
       const topo = section.getBoundingClientRect().top;
       if (topo <= metadeTela && topo + section.offsetHeight > metadeTela) {
         menuItem.forEach(i => i.classList.remove('item__ativo'));
         item.classList.add('item__ativo');
+        sectionEspecifica.classList.add(`section--ativa`);
       }
     }
   });
