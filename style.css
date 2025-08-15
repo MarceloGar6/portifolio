@@ -168,8 +168,8 @@ body{
 }
 
 @keyframes pisca {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+    0%, 100% { opacity: 1;}
+    50% { opacity: 0;}
 }
 
 .container{
@@ -388,7 +388,6 @@ body{
 }
 
 #contact {
-    margin-top: 100px;
     margin-bottom: 100px;
     display: flex;
     flex-direction: column;
@@ -648,6 +647,11 @@ body{
         margin: 0 auto 20px auto;
         text-align: center;
         overflow: hidden;
+    }
+
+    #certificados {
+        padding: 20px 0;
+        height: auto;
     }
 
     #certificados-em-carrocel{
