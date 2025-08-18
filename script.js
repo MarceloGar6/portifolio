@@ -1,4 +1,4 @@
-const sections = ['home', 'about', 'skills', 'contact'];
+const sections = ['home', 'about', 'skills','projetos', 'contact'];
 const menuItem = document.querySelectorAll('.menu-list__item');
 const imagemProgramador = document.querySelector('#programador-img');
 const skillsItem = document.querySelectorAll('.skills__item');
