@@ -675,4 +675,17 @@ body{
         display: flex;
         scroll-snap-type: x mandatory;
     }
+    .certificados__botao{
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .certificados__botao__img {
+        width: 20px;
+        height: 20px;
+        background-size: cover;
+    }
 }
