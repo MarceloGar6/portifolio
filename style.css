@@ -122,12 +122,13 @@ body{
 
 #chamado{
     font-size: 48px;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 1
 }
 
 #chamado span{
-    color: var(--cor-texto-principal);
+    font-weight: 600;
+    color: beige;
 }
 
 .conteudo__texto{
