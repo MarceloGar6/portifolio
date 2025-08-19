@@ -418,18 +418,22 @@ body{
 .projetos__list{
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 20px;
     padding: 0;
 }
 
 .projetos__item{
     width: 90%;
-    height: 250px;
+    height: 200px;
     background: beige;
     box-shadow: 0 4px 16px rgba(0,0,0,0.4);
     border-radius: 20px;
     list-style: none;
     transition: scale 0.1s ease, box-shadow 0.2s ease;
+}
+
+.projetos__item__titulo{
+    margin-top: 25px;
 }
 
 .projetos__item__texto{
@@ -464,7 +468,7 @@ body{
 }
 
 .projetos__image{
-    height: 230px;
+    height: 180px;
     margin: 10px;
     border-radius: 20px;
 }
@@ -535,7 +539,17 @@ body{
     padding: 20px 0;
 }
 
-
+@media (max-width: 1600px) {
+    .skills__item {
+        width: 150px;
+        height: 150px;
+        gap: 10px;
+    }
+    .skills__item img {
+        width: 90px;
+        height: 90px;
+    }
+}
 
 @media (max-width: 1200px) {
     body {
@@ -554,8 +568,8 @@ body{
         margin: 0 3vw;
     }
     .skills__item {
-        width: 150px;
-        height: 150px;
+        width: 140px;
+        height: 140px;
         gap: 5px;
     }
     .skills__item img {
@@ -597,8 +611,8 @@ body{
         gap: 1px;
     }
     .skills__item img {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
     }
 
     .certificados__carrocel {
