@@ -32,7 +32,6 @@ body{
     box-sizing: border-box;
     margin: 0 10vw;
     overflow-x: hidden;
-    ;
 }
 
 .menu{
@@ -390,6 +389,86 @@ body{
     }
 }
 
+#projetos{
+    margin: 100px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projetos__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#texto_projetos{
+    padding: 10px 0 60px;
+    width: auto;
+}
+
+.projetos__conteudo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.projetos__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 0;
+}
+
+.projetos__item{
+    width: 90%;
+    height: 250px;
+    background: beige;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    border-radius: 20px;
+    list-style: none;
+    transition: scale 0.1s ease, box-shadow 0.2s ease;
+}
+
+.projetos__item__texto{
+    margin-top: 20px;
+    text-align: justify;
+    padding: 0 20px 0 0;
+}
+
+.inverso{
+    margin-left: auto;
+}
+
+.inverso a{
+    flex-direction: row-reverse;
+}
+
+.texto_inverso{
+    text-align: justify;
+    padding: 0 0 0 20px;
+}
+
+.projetos__item:hover{
+    box-shadow: var(--box-shadow);
+    transform: scale(1.02);
+}
+
+.projetos__item a{
+    text-decoration: none;
+    color: var(--cor-texto-principal);
+    display: flex;
+    gap: 20px;
+}
+
+.projetos__image{
+    height: 230px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
 #contact {
     margin-bottom: 100px;
     display: flex;
@@ -455,6 +534,8 @@ body{
     text-align: center;
     padding: 20px 0;
 }
+
+
 
 @media (max-width: 1200px) {
     body {
@@ -524,7 +605,7 @@ body{
         width: 60vw;
         height: 200px;
     }
-    }
+}
 
 @media (max-width: 790px) {
     /* Sobre Mim: h2 acima da foto */
