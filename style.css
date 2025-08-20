@@ -324,7 +324,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 800px;
+    width: 50vw;
     height: 400px;
 }
 
@@ -339,6 +339,7 @@ body{
 }
 
 .certificados__botao{
+    margin: 0 20px;
     height: 80px;
     width: 80px;
     transition: transform 0.2s ease;
@@ -508,8 +509,8 @@ body{
     width: 100%;
 }
 
-#mensagem{
-    height: 100px;
+#message{
+    height: 95px;
     padding: 10px 1%;
     border: 1px solid var(--cor-texto-principal);
     border-radius: 5px;
@@ -517,7 +518,7 @@ body{
 
 #enviar{
     margin: 0 0 20px 20px;
-    width: 20%;
+    width: 100px;
     padding: 10px 20px;
     border: var(--cor-texto-principal) 1px solid;
     border-radius: 5px;
@@ -798,6 +799,7 @@ body{
         scroll-snap-type: x mandatory;
     }
     .certificados__botao{
+        margin: 0;
         width: 30px;
         height: 30px;
         background-size: cover;
