@@ -121,3 +121,17 @@ if (menuHamburguer && menuList) {
     });
   });
 }
+
+function trocarImagensProjetos() {
+  const imagensProjetos = document.querySelectorAll('.projetos__image');
+  imagensProjetos.forEach(imagem => {
+    if (window.innerWidth < 900) {
+      imagem.src = `${imagem.dataset.mobile}`;
+    } else {
+      imagem.src = `${imagem.dataset.desktop}`;
+    }
+  });
+}
+
+window.addEventListener('DOMContentLoaded', trocarImagensProjetos);
+window.addEventListener('resize', trocarImagensProjetos);
