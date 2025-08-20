@@ -720,6 +720,7 @@ body{
     }
     .skills__item img {
         width: 35%;
+        height: 35%;
     }
     .projetos__item {
         width: 100%;
