@@ -264,7 +264,7 @@ body{
     flex-wrap: wrap;
     margin-top: 30px;
     display: flex;
-    gap: 50px;
+    gap: 20px;
 }
 
 
@@ -272,7 +272,7 @@ body{
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     justify-content: center;
     align-items: center;
     width: 180px;
@@ -725,14 +725,12 @@ body{
     .projetos__item {
         width: 100%;
         height: auto;
-        padding: 10px;
-    }
-
-    .projetos__image {
-        border-radius: 10px;
+        min-height: 400px;
+        padding: 0px;
     }
 
     .projetos__item a{
+        padding: 10px 10px 30px 10px;
         flex-direction: column;
         align-items: center;
     }
@@ -743,6 +741,15 @@ body{
         border-radius: 10px;
     }
 
+    .projetos__item__titulo {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .projetos__item__texto {
+        font-size: 14px;
+        padding: 0 10px;
+    }
     .formulario__inteiro {
         display: flex;
         flex-direction: column;
