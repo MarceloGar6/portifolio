@@ -719,8 +719,7 @@ body{
         height: 120px;
     }
     .skills__item img {
-        width: 50px;
-        height: 50px;
+        width: 35%;
     }
     .projetos__item {
         width: 100%;
@@ -729,6 +728,17 @@ body{
     }
 
     .projetos__image {
+        border-radius: 10px;
+    }
+
+    .projetos__item a{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projetos__image {
+        width: 80%;
+        height: auto;
         border-radius: 10px;
     }
 

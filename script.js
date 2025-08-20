@@ -125,9 +125,11 @@ if (menuHamburguer && menuList) {
 function trocarImagensProjetos() {
   const imagensProjetos = document.querySelectorAll('.projetos__image');
   imagensProjetos.forEach(imagem => {
-    if (window.innerWidth < 900) {
+    if(window.innerWidth < 790) {
+      imagem.src = `${imagem.dataset.desktop}`;
+    } else {if (window.innerWidth < 900) {
       imagem.src = `${imagem.dataset.mobile}`;
-    } else {
+    }else 
       imagem.src = `${imagem.dataset.desktop}`;
     }
   });
