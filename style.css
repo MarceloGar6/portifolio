@@ -324,8 +324,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50vw;
-    height: 400px;
+    width: 40vw;
+    height: 300px;
 }
 
 .certificados__botao__img{
@@ -794,7 +794,7 @@ body{
     }
     .certificados__carrocel {
         position: relative;
-        width: 60vw;
+        width: 70vw;
         display: flex;
         scroll-snap-type: x mandatory;
     }
