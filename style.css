@@ -23,7 +23,7 @@ section{
 }
 
 html {
-    scroll-padding-top: 20px;
+    scroll-padding-top: 5vw;
     scroll-behavior: smooth;
 }
 
@@ -637,7 +637,7 @@ body{
         margin-bottom: 30px;
     }
     html{
-        scroll-padding-top: 0px;
+        scroll-padding-top: 5vh;
     }
 
     .menu {
